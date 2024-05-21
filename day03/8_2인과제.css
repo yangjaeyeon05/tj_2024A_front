@@ -1,0 +1,72 @@
+/* 글머리 제거 */
+li{list-style-type: none;}
+/* 기본값 여백 제거 */
+*{padding: 0px; margin: 0px;}
+
+body{
+    text-align: center;
+}
+
+ul{ 
+    border: 1px solid #c2bebe;
+    margin: 12px auto;
+    width: 400px;
+}
+.instaLogo{
+    width: 250px;
+    margin: 30px 0px;
+}
+
+.box{
+    width: 300px; height: 30px;
+    background-color: #f8f8f8;
+    border: 1px solid #cac6c6;
+    border-radius: 2px;
+    font-size: 10px;
+    padding-left: 5px;
+    margin: 5px;
+}
+
+.loginBox{
+    width: 300px;
+    margin: 10px auto;
+    padding: 5px;
+    background-color: #0095F6;
+    border-radius: 10px;
+}
+.login{
+    text-decoration: none;
+    color: white;
+}
+
+
+.facebook{
+    margin: 20px;
+}
+.faceLogo{
+    width: 25px;
+}
+
+.facelogin{
+    text-decoration: none;
+    color: rgb(41, 75, 148);
+}
+
+.inquiry{
+    margin: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+#signup{
+    padding: 30px 0px;
+    font-weight: lighter;
+}
+
+#signUp{
+    text-decoration: none;
+    font-weight: bold;
+    color: #0095F6;
+}

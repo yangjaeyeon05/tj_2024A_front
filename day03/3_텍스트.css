@@ -1,0 +1,50 @@
+
+/* 
+    css 주석
+    어디에{ 무엇을:어떻게; }
+    어디에{ 무엇을:어떻게; 무엇을:어떻게; }
+
+    px : 픽셀, 고정형 크기
+
+*/
+
+.title{
+    font-family: "궁서";    /* 글꼴 */
+    font-size: 30px;        /* 글꼴 크기 */
+    font-style: italic;     /* 기울기 */
+    font-weight: bold;      /* 진하게 : h마크업들은 기본값 */
+}
+
+/*=============웹폰트 : 눈누=============*/
+@font-face {
+    font-family: 'TTHakgyoansimTtwimteulR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimTtwimteulR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/*=======================================*/
+
+.content{
+      /* 웹폰트 : 설치X , 폰트 제공하는 서버 제공 */
+    font-family: 'TTHakgyoansimTtwimteulR';
+    color: gold;          /* 폰트색상 */
+    word-spacing: 10px;     /* 단어 간격 : 어간 */
+    letter-spacing: 2px;    /* 글자 간격 : 자간 */
+    line-height: 160%;      /* 줄간격 */
+}
+
+#writer{
+    /* 텍스트/컨텐츠 가로 정렬 : left , right , center */
+    text-align: center ;       
+
+    /* 텍스트 선긋기  underline:밑줄 overline:윗줄 line-through:취소선 */
+    text-decoration: underline overline line-through; 
+    
+    /* 텍스트 그림자 : x축 y축 흐림정도 색상 */
+    text-shadow: 6px -1px 7px red;
+
+    /* 색상 : 1. 색상이름 2. 헥사코드[16진수] 3. RGB색상 [0~255 사이 3칸] */
+    color: blue;
+    color: #0000ff;
+    color: rgb(0, 0, 255);
+}

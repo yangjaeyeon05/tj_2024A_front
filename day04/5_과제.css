@@ -1,0 +1,71 @@
+/* 기본 여백 제거, 글머리 제거 */
+*{ margin: 0px; padding: 0px; list-style-type: none; }
+/* 구역 사이즈 : 테두리 기준 */
+*{ box-sizing: border-box; }
+
+/* a 마크업 기본값 제거 : 밑줄 제거, 색상 변경 */
+a{ text-decoration: none; }
+
+/* 확인용*/
+/* *{ border: 1px solid red; } */
+
+body{ background-color: black; }
+
+#content{
+    background: linear-gradient(rgb(103, 105, 105), rgb(9, 12, 14), black);
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#content > p{
+    font-size: 80px;
+    margin: 0px;
+    color: white;
+}
+#contentInfo{
+    font-size: 20px;
+    line-height: 150%;
+    color: gray;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+#contentMedia > img{
+    width: 300px;
+}
+#contentMedia{
+    display: flex;
+    justify-content: space-around;
+}
+#contentBox{
+    display: flex;
+    align-items: flex-end;
+    width: 200px; height: 500px;
+}
+#contentBox > a{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+#box{
+    color: white;
+    font-size: 25px;
+    padding: 20px 0px;
+    border-bottom: 1px solid gray;
+}
+
+#aside{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#aside > li{
+    border-bottom: 1px solid gray;
+    padding: 20px 0px;
+}
+
+#aside > li > a{
+    color: rgb(115, 115, 199);
+}
