@@ -68,3 +68,16 @@ if( gamePane[0] == gamePane[4] && gamePane[4] == gamePane[8] ){ }
 if( gamePane[2] == gamePane[4] && gamePane[4] == gamePane[6] ){ }
 
 if( gamePane.indexOf('B') == -1){ }
+
+for(let i=0; i<=2; i+=3){                                               // 가로 승리 조건
+    if(gamePane[i]!='B' && gamePane[i+1]!='B' && gamePane[i+2]!='B'){   
+    if(gamePane[i]==gamePane[i+1] && gamePane[i+1]==gamePane[i+2]){}
+    }
+}
+for(let i=0; i<=2; i++){                                                // 세로 승리 조건
+    if(gamePane[i]==gamePane[i+3] && gamePane[i+3]==gamePane[i+6]){}
+}                                                                     
+if(gamePane[0]==gamePane[4] && gamePane[4]==gamePane[8]){}              // 대각선 승리 조건
+if(gamePane[2]==gamePane[4] && gamePane[4]==gamePane[6]){}
+
+if(gamePane.indexOf('B')==-1){}                                         // 무승부
