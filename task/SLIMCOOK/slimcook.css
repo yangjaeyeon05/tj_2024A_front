@@ -4,12 +4,10 @@
     padding: 0px; margin: 0px; 
     font-size: 12px; 
     box-sizing: border-box;
+    font-family: 'Pretendard-Regular'; color: #46433f;
 }
 li{list-style-type: none;}
 a{text-decoration: none; color: 46433f;}
-
-/*=======================확인용=======================*/
-/* *{ border: 1px solid red;} */
 
 /*======================= 폰트 =======================*/
 @font-face {
@@ -18,13 +16,12 @@ a{text-decoration: none; color: 46433f;}
     font-weight: 400;
     font-style: normal;
 }
-*{ font-family: 'Pretendard-Regular'; color: #46433f; }
-
-/*=======================레이아웃=======================*/
-#content{ width: 1100px; margin: 0px auto;}
-
 
 /*======================= 헤더 =======================*/
+#header{
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+}
 #skyEvent{ 
     width: 100%;
     background-color: #00865A; 
@@ -46,12 +43,8 @@ a{text-decoration: none; color: 46433f;}
     justify-content: space-between;
     padding-top: 25px;
 }
-#leftMenu{
-    display: flex;
-}
-#leftMenu > li{ 
-    padding: 0 15px 0 0;
-}
+#leftMenu{ display: flex; }
+#leftMenu > li{ padding: 0 15px 0 0; }
 #leftMenu > li > a{
     font-size: 13px; 
     letter-spacing: 2px;
@@ -70,16 +63,9 @@ a{text-decoration: none; color: 46433f;}
     z-index: 2;
 }
 #leftMenu li:hover .subMenu{ display: block;}
-#rightMenu{
-    display: flex;
-}
-#rightMenu > li{
-    padding: 0 0 0 20px;
-}
-#rightMenu > li > a{
-    font-size: 13px; 
-    letter-spacing: 2px;
-}
+#rightMenu{ display: flex; }
+#rightMenu > li{ padding: 0 0 0 20px; }
+#rightMenu > li > a{ font-size: 13px; letter-spacing: 2px; }
 #blackBox{
     background-color: black; color: white;
     text-align: center;
@@ -119,14 +105,10 @@ a{text-decoration: none; color: 46433f;}
     align-items: center;
     font-size: 16px; font-weight: bold;
 }
-#mainMenu2 > ul > li{
-    padding-right: 90px;
-}
+#mainMenu2 > ul > li{ padding-right: 90px; }
 #mainMenu2 > ul > li > a{ height: 49px;}
 #topmenuIcon{ padding-right: 10px; padding-top: 3px; }
-#mainMenu2 #category{
-    position: relative;
-}
+#mainMenu2 #category{ position: relative; }
 #category1{
     position: absolute; 
     top:49px;
@@ -179,14 +161,11 @@ a{text-decoration: none; color: 46433f;}
     right: 7px;
 }
 *:focus{ outline: none; }
-#header{
-    width: 100%;
-    border-bottom: 1px solid #dbdbdb;
-}
+
 /*======================= 푸터 =======================*/
-#footer{ width: 100%; border-top: 1px solid #dbdbdb; margin: 0 auto;}
+#footer{ width: 100%; border-top: 1px solid #dbdbdb; margin: 0 auto; }
 #topFooter{ background-color: #f2f2f2; }
-#ftLeft{ width: 55%; padding-right: 50px;}
+#ftLeft{ width: 55%; padding-right: 50px; }
 #topftcontent{
     width: 1100px; margin: 0 auto;
     display: flex; justify-content: space-between;
@@ -272,9 +251,7 @@ a{text-decoration: none; color: 46433f;}
     letter-spacing: 1px; 
     font-size: 13px; font-weight: bold;
 }
-#ftInfo{
-    padding-top: 20px;
-}
+#ftInfo{ padding-top: 20px; }
 #ftInfo p a{
     font-size: 13px; color: #1c1c1c;
     padding: 0 5px;
@@ -331,12 +308,8 @@ a{text-decoration: none; color: 46433f;}
 #quickMenu > ul {
     display: flex; justify-content: space-between;
 }
-#quickMenu > ul > li{
-    text-align: center;
-}
-#quickMenu > ul img{
-    width: 160px;
-}
+#quickMenu > ul > li{ text-align: center; }
+#quickMenu > ul img{ width: 160px; }
 #quickMenu a{ font-size: 16px; }
 #quickMenu{ padding-bottom: 120px; }
 #quickMenu li:hover #quickMenuhover{ 
@@ -359,9 +332,7 @@ a{text-decoration: none; color: 46433f;}
     width: 275px; height: 402px;
     padding: 10px;
  }
-.itemImg img{ 
-    width: 255px; height: 255px; 
-}
+.itemImg img{ width: 255px; height: 255px; }
 .freeDeli > img{
     position: absolute;
     top: 10px;
@@ -372,7 +343,6 @@ a{text-decoration: none; color: 46433f;}
     bottom: 150px; right: 20px;
     width: 48px; height: 48px;
 }
-
 .itemName{ 
     font-size: 16px; margin-top: 14px; 
     letter-spacing: 1px;
@@ -398,9 +368,7 @@ a{text-decoration: none; color: 46433f;}
     bottom: 120px; right: 15px;
     width: 48px; height: 48px;
 }
-#fireImg{
-    width: 347px; height: 347px; 
-}
+#fireImg{ width: 347px; height: 347px; }
 #middleContent{ margin-bottom: 150px;}
 #middleImg{ width: 1080px; }
 .slide{display: flex; justify-content: center;}
@@ -412,10 +380,7 @@ a{text-decoration: none; color: 46433f;}
     margin-top: 5px;
 }
 #greenCir{ background-color: #00865A; }
-#categoryMenu{ 
-    display: flex; 
-    justify-content: center;
-}
+#categoryMenu{ display: flex; justify-content: center; }
 #categoryMenu  li{
     width: 91px; height: 36px;
     background-color: #eeeeee;
@@ -431,16 +396,11 @@ a{text-decoration: none; color: 46433f;}
     font-size: 16px; color: #5e5e5e;
     letter-spacing: 1px;
 }
-#categoryMenu li:hover #categoryMenuhover{
-    color: white;
-}
-#categoryMenu li:hover{
-    background-color: #00865A;
-}
+#categoryMenu li:hover #categoryMenuhover{ color: white; }
+#categoryMenu li:hover{ background-color: #00865A; }
 #reviewList{
     display: flex; justify-content: space-between;
     margin-top: 50px;
-    
 }
 .reviewImgbox{ 
     width: 344px; height: 203px;
@@ -461,9 +421,7 @@ a{text-decoration: none; color: 46433f;}
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-#powerStar{
-    display: flex; width: 24px;
-}
+#powerStar{ display: flex; width: 24px; }
 #powerStar > img{ padding-right: 5px; margin-bottom: 8px;}
 .reviewContnet{
     font-size: 16px; letter-spacing: 1px;
@@ -484,12 +442,9 @@ a{text-decoration: none; color: 46433f;}
     display: flex;
     align-items: center; justify-content: center;
 }
-#follow > a{ 
-    color: white; font-size: 16px;
-}
+#follow > a{ color: white; font-size: 16px; }
 #bottomInsta #bottomLeft #follow:hover {
     background-color: #00865A;
-
 }
 
 #bottomRight img{ width: 162px; height: 154px;}
