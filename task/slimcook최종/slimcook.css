@@ -1,0 +1,792 @@
+/*=======================전체구역=======================*/
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    box-sizing: border-box;
+    font-family: 'Pretendard-Regular';
+    color: #46433f;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: 46433f;
+}
+
+/*======================= 폰트 =======================*/
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*======================= 헤더 =======================*/
+#header {
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+#skyEvent {
+    width: 100%;
+    background-color: #00865A;
+    padding: 14px 0px;
+}
+
+#skyEvent a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#eventText {
+    text-align: center;
+}
+
+#xIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#topMenu {
+    width: 1100px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+#leftMenu {
+    display: flex;
+}
+
+#leftMenu>li {
+    padding: 0 15px 0 0;
+}
+
+#leftMenu>li>a {
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+#leftMenu>li {
+    position: relative;
+}
+
+#leftMenu .subMenu {
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    padding: 10px 0;
+    width: 110%;
+    text-align: center;
+    line-height: 190%;
+    display: none;
+    z-index: 2;
+}
+
+#leftMenu li:hover .subMenu {
+    display: block;
+}
+
+#rightMenu {
+    display: flex;
+}
+
+#rightMenu>li {
+    padding: 0 0 0 20px;
+}
+
+#rightMenu>li>a {
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+#blackBox {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0px 8px;
+    border-radius: 10px;
+}
+
+#rightMenu li:hover #rightMenuhover {
+    color: #00865A;
+}
+
+#mainLogo {
+    margin: 0px auto;
+    width: 1100px;
+    text-align: center;
+    padding: 32.5px 0;
+}
+
+#logoImg {
+    width: 135px;
+}
+
+#mainMenu {
+    width: 100%;
+    margin: 0px auto;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    border-bottom: 1px solid #dbdbdb;
+    z-index: 1;
+}
+
+#mainMenu2 li:hover #categoryBtn {
+    color: #00865A;
+    font-weight: bolder;
+}
+
+#mainMenu2 {
+    width: 1100px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#mainMenu2>ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mainMenu2>ul>li>a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#mainMenu2>ul>li {
+    padding-right: 90px;
+}
+
+#mainMenu2>ul>li>a {
+    height: 49px;
+}
+
+#topmenuIcon {
+    padding-right: 10px;
+    padding-top: 3px;
+}
+
+#mainMenu2 #category {
+    position: relative;
+}
+
+#category1 {
+    position: absolute;
+    top: 49px;
+    left: 0px;
+    width: 100%;
+    border-left: 1px solid #cfd0d1;
+    border-right: 1px solid #cfd0d1;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 300%;
+    letter-spacing: 1px;
+    padding: 20px 0;
+    padding-left: 20px;
+    display: none;
+}
+
+#category2 {
+    position: absolute;
+    left: 0px;
+    top: 200px;
+    width: 100%;
+    border-left: 1px solid #cfd0d1;
+    border-right: 1px solid #cfd0d1;
+    border-bottom: 1px solid #cfd0d1;
+    background-color: #f5f5f5;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 300%;
+    letter-spacing: 1px;
+    padding-left: 30px;
+    display: none;
+}
+
+#category1 li:hover #category1Hover {
+    color: #00865A;
+}
+
+#category2 li:hover #category2Hover {
+    color: #00865A;
+}
+
+#category:hover #category1 {
+    display: inline-block;
+}
+
+#category:hover #category2 {
+    display: inline-block;
+}
+
+#searchBox {
+    border: none;
+    width: 190px;
+    height: 34px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 8px;
+}
+
+#searchBox>input {
+    border: none;
+    background-color: #f2f2f2;
+    padding-left: 10px;
+}
+
+#searchIcon {
+    width: 15px;
+    position: absolute;
+    right: 7px;
+}
+
+*:focus {
+    outline: none;
+}
+
+/*======================= 푸터 =======================*/
+#footer {
+    width: 100%;
+    border-top: 1px solid #dbdbdb;
+    margin: 0 auto;
+}
+
+#topFooter {
+    background-color: #f2f2f2;
+}
+
+#ftLeft {
+    width: 55%;
+    padding-right: 50px;
+}
+
+#topftcontent {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+#ftNotice {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+#ftNotice>h3 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#ftNotice>a {
+    font-size: 14px;
+    text-decoration: underline;
+    color: #7e7e7e;
+    margin-top: 5px;
+}
+
+#ftLeft>ul>li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 10px;
+}
+
+#ftLeft>ul>li>a {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#ftLeft>ul>li>p {
+    font-size: 14px;
+    color: #7e7e7e;
+    letter-spacing: 1px;
+}
+
+#ftLeft a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#imporNotice {
+    font-weight: bold;
+}
+
+#ftright {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+#ftright h3 {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+
+#centerNum {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(0, 134, 90);
+}
+
+#ftright p {
+    font-size: 13px;
+    line-height: 200%;
+    letter-spacing: 2px;
+}
+
+.ftBtn {
+    display: inline-block;
+    background-color: #2e2e2e;
+    color: #fff;
+    width: 85px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.ftBtn a {
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    line-height: 30px;
+}
+
+.ftBtn:hover #ftBtna {
+    text-decoration: underline;
+}
+
+#bottomFooter {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#bottomFooter h3 {
+    font-size: 18px;
+    font-family: '고딕';
+    margin-bottom: 10px;
+    color: #2e2e2e;
+}
+
+#bottomFooter p {
+    color: #2e2e2e;
+    line-height: 180%;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+#bottomFooter span {
+    color: #46433f;
+    line-height: 180%;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#ftInfo {
+    padding-top: 20px;
+}
+
+#ftInfo p a {
+    font-size: 13px;
+    color: #1c1c1c;
+    padding: 0 5px;
+}
+
+#bottomFooter>#lastft {
+    font-size: 14px;
+    color: #999999;
+}
+
+#bottomFooter a:hover {
+    text-decoration: underline;
+}
+
+/*======================= 메인이미지 =======================*/
+#mainImg {
+    width: 2000px;
+    height: 400px;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+}
+
+/*======================= 팝업 =======================*/
+#popupKakao {
+    position: fixed;
+    top: 88%;
+    right: 60px;
+}
+
+#popupMenu {
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    z-index: 1;
+}
+
+#popupMenu>ul>li {
+    width: 97px;
+    height: 30px;
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+    line-height: 220%;
+    text-align: center;
+
+}
+
+#popupMenu>ul>#first {
+    background-color: #00865A;
+    border: 1px solid #00865A;
+
+}
+
+#popupMenu>ul>#first>a {
+    color: white;
+}
+
+#contentWrap {
+    position: relative;
+    width: 100%;
+    margin: 0px auto;
+}
+
+#popupMenu img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #dbdbdb;
+    margin-top: 20px;
+}
+
+/*=======================  본문  =======================*/
+#content {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+#quickMenu>ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#quickMenu>ul>li {
+    text-align: center;
+}
+
+#quickMenu>ul img {
+    width: 160px;
+}
+
+#quickMenu a {
+    font-size: 16px;
+}
+
+#quickMenu {
+    padding-bottom: 120px;
+}
+
+#quickMenu li:hover #quickMenuhover {
+    color: #00865A;
+    font-weight: bolder;
+}
+
+.itemWrap {
+    margin-bottom: 100px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+.title>img {
+    width: 32px;
+    height: 32px;
+    margin-left: 4px;
+}
+
+.title>h3 {
+    font-size: 28px;
+    color: #2e2e2e;
+}
+
+.itemList {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    position: relative;
+    width: 275px;
+    height: 402px;
+    padding: 10px;
+}
+
+.itemImg img {
+    width: 255px;
+    height: 255px;
+}
+
+.freeDeli>img {
+    position: absolute;
+    top: 10px;
+    width: 59px;
+    height: 25px;
+}
+
+.addIcon img {
+    position: absolute;
+    bottom: 150px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+}
+
+.itemName {
+    font-size: 16px;
+    margin-top: 14px;
+    letter-spacing: 1px;
+    flex: wrap;
+}
+
+.itemPrice {
+    margin-top: 12px;
+    line-height: 230%;
+    letter-spacing: 1px;
+}
+
+.itemPrice>.disc {
+    font-size: 16px;
+    color: #00865A;
+    margin-right: 4px;
+}
+
+.itemPrice>.discPrice {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.price {
+    margin: 8px 0;
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #8e8d8d;
+}
+
+#fireItem {
+    position: relative;
+}
+
+.fireItemadd img {
+    position: absolute;
+    bottom: 120px;
+    right: 15px;
+    width: 48px;
+    height: 48px;
+}
+
+#fireImg {
+    width: 347px;
+    height: 347px;
+}
+
+#middleContent {
+    margin-bottom: 150px;
+}
+
+#middleImg {
+    width: 1080px;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+}
+
+.slide>div {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #dbdbdb;
+    margin: 0 4px;
+    margin-top: 5px;
+}
+
+#greenCir {
+    background-color: #00865A;
+}
+
+#categoryMenu {
+    display: flex;
+    justify-content: center;
+}
+
+#categoryMenu li {
+    width: 91px;
+    height: 36px;
+    background-color: #eeeeee;
+    margin: 0 5px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#categoryMenu>#greenBack {
+    background-color: #00865A;
+}
+
+#categoryMenu>#greenBack>a {
+    color: white;
+    font-weight: bold;
+}
+
+#categoryMenu>li>a {
+    font-size: 16px;
+    color: #5e5e5e;
+    letter-spacing: 1px;
+}
+
+#categoryMenu li:hover #categoryMenuhover {
+    color: white;
+}
+
+#categoryMenu li:hover {
+    background-color: #00865A;
+}
+
+#reviewList {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.reviewImgbox {
+    width: 344px;
+    height: 203px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.reviewImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reviewInfo {
+    width: 344px;
+    border: 1px solid #dbdbdb;
+    padding: 16px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#powerStar {
+    display: flex;
+    width: 24px;
+}
+
+#powerStar>img {
+    padding-right: 5px;
+    margin-bottom: 8px;
+}
+
+.reviewContnet {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 16px 0;
+    line-height: 160%;
+}
+
+.reviewWriter {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #7d7d7d;
+}
+
+#bottomLeft {
+    width: 20%;
+}
+
+#bottomLeft img {
+    width: 35px;
+}
+
+#bottomLeft #insta {
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+#bottomLeft #follow {
+    width: 120px;
+    height: 35px;
+    background-color: black;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#follow>a {
+    color: white;
+    font-size: 16px;
+}
+
+#bottomInsta #bottomLeft #follow:hover {
+    background-color: #00865A;
+}
+
+#bottomRight img {
+    width: 162px;
+    height: 154px;
+}
+
+#bottomInsta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+    margin-top: 100px;
+}
