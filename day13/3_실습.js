@@ -23,6 +23,8 @@ function add(i){
 
     print();
 
+    
+
 }
 
 function print(){
@@ -32,13 +34,9 @@ function print(){
 
     for( let i = 0 ; i<20 ; i++ ){
         if(주차장[i]==''){
-            html  = html + `<div class="whiteBox" onclick="add(${i})"></div>` // vs html+=`<div></div>`
-        
-        }else{  html  = html + `<div class="redBox" onclick="add(${i})"></div>` // vs html+=`<div></div>`
-        
-
-        }
-        
+            html  = html + `<div class="whiteBox" onclick="add(${i})"></div>` // vs html+=`<div></div>`        
+        }else{  html  = html + `<div class="redBox" onclick="add(${i})"></div>` // vs html+=`<div></div>`       
+        }        
     }
     parkingArea.innerHTML = html;
     console.log(주차장);   
