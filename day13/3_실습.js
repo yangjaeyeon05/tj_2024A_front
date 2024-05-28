@@ -23,8 +23,6 @@ function add(i){
 
     print();
 
-    
-
 }
 
 function print(){
