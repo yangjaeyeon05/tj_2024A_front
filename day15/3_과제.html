@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <style>
+        body { width: 100%; }
+        #category{
+            display: flex;
+            justify-content: center;
+            font-size: 20px; font-weight: bold;          
+        }
+        #category > div{
+            padding: 10px 40px;
+            margin-bottom: 40px;
+            border: 1px solid black; 
+        }
+        #productList{
+            width: 500px;
+            font-size: 20px;
+            display: block;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+        }
+        #productList > div{
+            text-align: center;
+            width: 200px;
+            padding: 10px;
+            border: 1px solid black; 
+            margin: 0 auto;
+        }
+        #cartBox{
+            position: fixed;
+            top: 65%;
+            width: 500px; margin: 20px auto;
+            border: 3px solid black;
+            padding: 20px 20px;
+            margin-left: 50px;
+        }
+        p{ font-size: 20px; font-weight: bold;}
+        #cartBox div{
+            line-height: 200%;
+        }
+        #addBtn{
+            position: fixed;
+            top: 95%;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="category">
+
+    </div>
+    <div id="productList">
+        
+    </div>
+    <div id="cartBox">
+        <p> 장바구니 </p>
+        <div id="cartList">
+
+        </div>
+    </div>
+    <div id="addBtn">
+        <input id="addCategory" /> <button onclick="addCategory()"> 카테고리 등록 </button>
+        <input id="addProduct"/> <button onclick="addProduct()"> 제품 등록 </button>
+    </div>
+    <script src='3_과제.js'></script>
+</body>
+</html>
