@@ -113,7 +113,7 @@ function addProduct(){
     let autoNum = 13;
     autoNum += 1;
     let newPprice = prompt('가격책정');
-    let newCno = prompt('카테고리')*1;
+    let newCno = prompt('카테고리 번호입력')*1;
     let newProduct  = { pno : autoNum , pname : addProduct , pprice : newPprice , cno : newCno };       console.log(newProduct);
     제품목록.push(newProduct);              console.log( 제품목록 );
 }
