@@ -5,57 +5,35 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-
-    <style>
-        *{ box-sizing: border-box; margin: 20px; padding: 0;}
-        table{
-            margin: 0 auto;
-        }
-        #calendarHead{
-            display: flex;
-            margin: 5px auto;
-            justify-content: center;
-        }
-        #calendarHead label{
-            font-weight: bold; color: red;
-        }
-        #day >td{ 
-            width: 80px; height: 20px;
-            text-align: center;
-            background-color: #eeee;
-            font-weight: bold;
-        }
-        #sunday{ background-color: red !important; color: white; }
-        #calendarBody td{
-            width: 80px; height: 80px;
-            border: 1px solid #eeee;
-            vertical-align: top;
-        }
-        #today{ font-size: 20px; font-weight: bold; }
-    </style>
+    <link rel='stylesheet' type='text/css' media='screen' href='과제3.css'>
 
 </head>
 <body>
-    
-    <div id="calendarHead">
-        <div><label onclick="prevCalendar()"> < </label></div> 
-        <div id="calendarYM"> yyyy년 m월 </div> 
-        <div><label onclick="nextCalendar()"> > </label></div>
-    </div>
-    <table>
-        <thead>
-            <tr id="day">
-                <td id="sunday">일</td> <td>월</td> <td>화</td> <td>수</td>
-                <td>목</td> <td>금</td> <td>토</td>
-            </tr>
-        </thead>
-        <tbody id="calendarBody">
 
-        </tbody>
-    </table>
+    <div id="wrap">
 
-    <div id="popup">
+        <h3> 나만의 일정 달력 </h3>
 
+        <div id="calwrap">
+
+            <div id="caltop"> 
+                <button onclick="monthChange( '이전' )"> ◀ </button>
+                <h5> 2024년 05월 </h5>
+                <button onclick="monthChange( '다음' )"> ▶ </button>
+            </div>
+
+            <div id="calendar">
+
+            </div>
+
+        </div>
+        <div>
+            <h3> 일정등록 </h3>
+            <input id="newColor" type="color" />
+            <input id="newDate" type="date" />
+            <input id="newText" type="text" />
+            <button onclick="addCal()"> 일정등록 </button>
+        </div>
     </div>
 
     <script src='과제3.js'></script>

@@ -26,7 +26,7 @@
 
 
 /*
-// 1. 3개의 점수를 각 입력받아 총점 계산 하여 총점이 90 이상이면 '성공' 아니면 '실패' 출력하시오.
+     1. 3개의 점수를 각 입력받아 총점 계산 하여 총점이 90 이상이면 '성공' 아니면 '실패' 출력하시오.
 let 점수1 = prompt( '점수1')*1 ;            console.log( 점수1);
 let 점수2 = prompt( '점수2')*1 ;            console.log( 점수2);
 let 점수3 = prompt( '점수3')*1 ;            console.log( 점수3);
@@ -36,7 +36,7 @@ if( total>=90 ) {console.log( '성공'); }
 */
 
 /*
-// 2. 2개의 정수를 각 입력받아 더 큰수를 출력 하시오.
+     2. 2개의 정수를 각 입력받아 더 큰수를 출력 하시오.
 let num1 = prompt( '점수1' )*1;            console.log( num1 );
 let num2 = prompt( '점수2' )*1;            console.log( num2 );
 let result = num1 > num2 ? num1 : num2;
@@ -44,7 +44,7 @@ console.log( result );
 */
 
 /*
-// 3. 3개의 정수를 각 입력받아 더 큰수를 출력 하시오.
+     3. 3개의 정수를 각 입력받아 더 큰수를 출력 하시오.
 let num1 = prompt( '점수1' )*1;             console.log( num1 );
 let num2 = prompt( '점수2' )*1;             console.log( num2 );        
 let num3 = prompt( '점수3' )*1;             console.log( num3 );
@@ -63,7 +63,7 @@ score[0] = +prompt("정수1 입력");                       // 2. 입력받은 �
 score[1] = +prompt("정수2 입력");                       // 2. 입력받은 두번째 정수 값을 배열의 1번 인덱스에 저장 
 score[2] = +prompt("정수3 입력");                       // 2. 입력받은 세번째 정수 값을 배열의 2번 인덱스에 저장 
 let largestNum = score[0];                             // 3. * 가장큰수를 임시로 저장하는 변수 선언하고 먼저 배열내 0번 인덱스의 값 대입 
-// if문을 각각 사용해 모든 경우 검사 
+     if문을 각각 사용해 모든 경우 검사 
 if (largestNum < score[1]) { largestNum = score[1]; }   // 4. 만약에 가장큰수 보다 1번 인덱스의 값이 크면 가장큰수에 1번 인덱스의 값 대입 
 if (largestNum < score[2]) { largestNum = score[2]; }   // 5. 만약에 가장큰수 보다 2번 인덱스의 값이 크면 가장큰수에 2번 인덱스의 값 대입 
 console.log(largestNum);                                // 6. 가장큰수 변수를 출력 
@@ -82,7 +82,7 @@ console.log(largestNum);                                // 6. 가장큰수 변�
 */
 
 /*
-// 4. 3개의 정수를 각 입력받아 오름차순 또는 내림차순 하여 정렬해서 출력하시오. 
+     4. 3개의 정수를 각 입력받아 오름차순 또는 내림차순 하여 정렬해서 출력하시오. 
 
         A   B   C
         7   5   10
@@ -118,24 +118,24 @@ if(a>b){                        // 2. 만약에 a가 b보다 크면 a와 b의 �
     a = b ;                         // b값을 a에 넣고
     b = temp;                       // 임시변수 값을 b에 넣는다.
 }
-// A = 5 , B = 7 , C = 10
+     A = 5 , B = 7 , C = 10
 if(a>c){
     let temp=a;
     a = c ;
     c = temp;
 }
-// A = 5 , B = 7 , C = 10
+     A = 5 , B = 7 , C = 10
 if(b>c){
     let temp=b;
     b = c;
     c = temp;
 }
-// A = 5 , B = 7 , C = 10
+     A = 5 , B = 7 , C = 10
 console.log( `오름차순 : ${a} -> ${b} -> ${c}`);
 */
 
 /*
-// 5. 1개의 점수를 입력받아 90점 이상이면 'A등급' 80점이상이면 'B등급' 70점이상 'C등급' 그외 '재시험' 출력하시오.
+     5. 1개의 점수를 입력받아 90점 이상이면 'A등급' 80점이상이면 'B등급' 70점이상 'C등급' 그외 '재시험' 출력하시오.
 let 점수 = prompt('점수')*1;
 if( 점수 >= 90 ){ console.log( 'A등급' );}
 else if( 점수 >=80 ){console.log( 'B등급' );}
@@ -144,7 +144,7 @@ else{console.log( '재시험' );}
 */
 
 /*
-// 6. 아이디와 비밀번호 입력받아 아이디가 'admin' 이고 비밀번호가 '1234' 이면 '로그인 성공' 아니면 '로그인실패' 출력하시오.
+     6. 아이디와 비밀번호 입력받아 아이디가 'admin' 이고 비밀번호가 '1234' 이면 '로그인 성공' 아니면 '로그인실패' 출력하시오.
 let id = prompt('아이디');
 let password = prompt('비밀번호');
 if( id=='admin' && password== '1234' ){console.log( '로그인성공'); }
@@ -174,7 +174,7 @@ else{ console.log( '로그인실패'); }
 */
 
 /*
-// 8. 주민등록번호를 입력받아서 성별이 남자이면 색상변수에 'blue' 을 여자이면 'red' 을 대입 하고 색상변수 출력하시오.
+     8. 주민등록번호를 입력받아서 성별이 남자이면 색상변수에 'blue' 을 여자이면 'red' 을 대입 하고 색상변수 출력하시오.
 
     - 문자열 : ' ', " " , ` ` , prompt( )
     - 주민등록번호 : 951006-2221615;
@@ -187,14 +187,14 @@ if( number[7] == '1' || number[7] == '3' ){ color = 'blue' }
 else if( number[7] == '2' || number[7] == '4' ){ color = 'red' }
     console.log( color );
 
-// 응용
+     응용
 let html = `<h3 style='color : ${ color }'> 주민등록번호 : ${number} </h3>`;
     console.log( html );
 document.querySelector('#result1').innerHTML = html;
 */
 
 /*
-// 9. 가위바위보 게임 
+     9. 가위바위보 게임 
      조건1 : 가위 0 , 바위 1 , 보 2 입니다.
      조건2 : 플레이어 2 명 입니다.
      실행조건 : 각 플레이어가 가위바위보 중에 한번씩 입력받기 
@@ -208,23 +208,23 @@ document.querySelector('#result1').innerHTML = html;
 
 let p1 = prompt( '가위[0] 바위[1] 보[2]' );     //1. 입력받아 변수에 저장한다.
 let p2 = prompt( '가위[0] 바위[1] 보[2]' );     //1. 입력받아 변수에 저장한다.
-// 2.
-// 2-1.p1 승리했을때
+    2.
+    2-1.p1 승리했을때
 if( (p1 == 0 && p2 == 2 ) || (p1 == 1 && p2 == 0 ) || (p1 == 2 && p2 == 1 ) ){ console.log( 'p1 win' );}
-// 2-2.p1 무승부
+    2-2.p1 무승부
 else if( (p1 == 0 && p2 == 0 ) || (p1 == 1 && p2 == 1 ) || (p1 == 2 && p2 == 2 ) ){ console.log( 'draw' );}
-// 2-3.p2 승리했을때
+    2-3.p2 승리했을때
 else{ 
     console.log( 'p2 win' );
 }
-//2.
+    2.
 let answer = p1 == p2 ? 'draw' : p1 == (p2+1)%3 ? 'p1 win' : 'p2 win';
 console.log( (p2+1)%3 );
 console.log( p1 == (p2+1)%3 );
 console.log( answer );
 */
 /*
-// 10. 좌석 3개의 상태를 가지는 배열 선언하고 let sheetList = [ 'O' , 'X' , 'O' ]
+  10. 좌석 3개의 상태를 가지는 배열 선언하고 let sheetList = [ 'O' , 'X' , 'O' ]
     하나의 좌석 순서번호를 입력받아 빈좌석 이면 '예약성공' 아니면 '예약불가' 출력하고
     빈좌석 : 'X'  사용중인좌석 : 'O'
 
