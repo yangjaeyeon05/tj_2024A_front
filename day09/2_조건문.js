@@ -227,6 +227,7 @@ console.log( answer );
   10. 좌석 3개의 상태를 가지는 배열 선언하고 let sheetList = [ 'O' , 'X' , 'O' ]
     하나의 좌석 순서번호를 입력받아 빈좌석 이면 '예약성공' 아니면 '예약불가' 출력하고
     빈좌석 : 'X'  사용중인좌석 : 'O'
+*/
 
 let sheetList = [ 'O' , 'X' , 'O' ];
 
@@ -236,4 +237,3 @@ if(sheetList[ sheetNum-1 ] == 'O' ){console.log( ' 예약불가 '); }
 else if(sheetList[ sheetNum-1 ] == 'X'){console.log( ' 예약성공 '); sheetList[ sheetNum-1 ] = 'O' }
 
 console.log( sheetList);
-*/
